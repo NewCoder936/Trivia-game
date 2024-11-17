@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="trivia.css">
+        <title>Raymond Trivia Game</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Let us see your knowledge</h1>
+            <h2 class="hidden" id="message"></h2>
+            <h2 id="question-counter"></h2>
+            <h3 id="question"></h3>
+            <div id="buttons">
+                <button class="button" id="choice1" onclick="checkAnswer(this)"></button>
+                <button class="button" id="choice2" onclick="checkAnswer(this)"></button>
+                <button class="button" id="choice3" onclick="checkAnswer(this)"></button>
+                <button class="button" id="choice4" onclick="checkAnswer(this)"></button>
+            </div>
+            <div id="result"></div>
+            <div id="restart-area">
+                <button id="restart" onclick="restart()">Restart</button>
+            </div>
+        </div>
+        <script src="trivia.js"></script>
+    </body>
+</html> 
